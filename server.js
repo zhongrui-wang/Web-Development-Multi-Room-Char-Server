@@ -115,7 +115,6 @@ io.sockets.on('connection', function(socket){
       if(socket.username == j && socket.room == admins[j]){
         // update admins object as follows: {"username": "room"}
         admins[username] = admins[j];
-        console.log(admins);
         updateAdminsInRooms();
         callback(true);
       }else{
@@ -164,7 +163,6 @@ io.sockets.on('connection', function(socket){
             socketStore[d].leave(socket.room);
             socketStore[d].join('lobby');
             socketStore[d].room = 'lobby';
-            console.log(bannedUsers);
              // Update users array of objects that users has changed room
             objIndex = users.findIndex((obj => obj.username == username));
             users[objIndex].room = 'lobby';
@@ -259,7 +257,6 @@ io.sockets.on('connection', function(socket){
       socketStore[data] = socket;
       // Store users as array of objects
       users.push(theData);
-      console.log(socketStore);
 
       // Assign any users when logs in in to 'lobby' room
       socket.room = 'lobby';
