@@ -198,8 +198,6 @@ io.sockets.on('connection', function(socket){
         objIndex = users.findIndex((obj => obj.username == socket.username));
         users[objIndex].room = joinRoomName;
         updateUsersAndRooms();
-      }else{
-        callback(false);
       }
     }
   });
@@ -230,8 +228,6 @@ io.sockets.on('connection', function(socket){
         objIndex = users.findIndex((obj => obj.username == socket.username));
         users[objIndex].room = joinRoomName;
         updateUsersAndRooms();
-      }else{
-        callback(false);
       }
     });
   });
