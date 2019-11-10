@@ -1,5 +1,6 @@
 # CSE330
 467511
+466311
 
 ## Module 6: Multi-Room Chat Server
 
@@ -42,5 +43,7 @@ After that, you could see assigned username as admin in the room.
     <img src="application/img/img3.png" width="400">
 </p>
 
-### Author
+### Authors
 * Saulet Yskak
+* Zhongrui Wang
+
