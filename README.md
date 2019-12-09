@@ -1,8 +1,6 @@
-# CSE330
+# Multi-Room Chat Server
 467511
 466311
-
-## Module 6: Multi-Room Chat Server
 
 ## Usage:
 
